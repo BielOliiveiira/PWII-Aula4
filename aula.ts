@@ -1,6 +1,6 @@
 class Aluno{
-    nome: string
-    constructor(nome:string){
-        this.nome = nome
-    }
+    constructor(public nome:string){}
+    exibir(){
+        console.log("Nome: " + this.nome)
+}
 }
