@@ -1,11 +1,11 @@
-class Viagem{
+export class Viagem{
     constructor(
         public tempoGasto:number,
-        public velocidadeMedia:number,
+        public velocidadeMedia: number,
         public rendimentoVeiculo:number){}
     distancia():number
     {
-        return this.tempoGasto * this.rendimentoVeiculo;
+        return this.tempoGasto * this.velocidadeMedia
     }
     consumo():number
     {
